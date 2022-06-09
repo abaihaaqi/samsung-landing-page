@@ -2,6 +2,7 @@ import { useState } from 'react'
 import Image from 'next/image'
 import samsungLogo from '../public/samsung.svg'
 import { CaretRight, List, MagnifyingGlass, ShoppingCart, User, X } from 'phosphor-react'
+
 export default function Navbar({}) {
   const [isOpen, setIsOpen] = useState(false)
 
