@@ -13,7 +13,12 @@ module.exports = {
       '2xl': '3rem',
       '3xl': '4rem'
     },
-    extend: {},
+    extend: {
+      fontFamily: {
+        'samsung-one': ['Samsung One', 'sans-serif'],
+        'samsung-sharp-sans': ['Samsung Sharp Sans', 'sans-serif'],
+      },
+    }
   },
   plugins: [],
 }
