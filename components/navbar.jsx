@@ -23,8 +23,8 @@ export default function Navbar({}) {
         </div>
       </div>
       {isOpen && (
-        <div className='absolute inset-0 bg-black/80'>
-          <div className='absolute inset-y-0 right-0 bg-white w-5/6 p-4 flex flex-col'>
+        <div className='absolute top-0 inset-x-0 bg-black/80 z-50 max-h-screen overflow-scroll'>
+          <div className='md:ml-16 bg-white p-4 flex flex-col'>
             <button className='flex justify-end' onClick={() => setIsOpen(!isOpen)}>
               <X size={28} />
             </button>
