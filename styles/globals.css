@@ -25,6 +25,13 @@
     @apply font-samsung-one bg-slate-200 text-black
   }
 
+  h1,
+  h2,
+  h3,
+  h4 {
+    @apply font-samsung-sharp-sans
+  }
+
   h1 {
     @apply text-2xl
   }
