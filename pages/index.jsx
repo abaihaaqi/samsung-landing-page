@@ -1,33 +1,16 @@
-import Navbar from '../components/navbar';
 import Layout from '../components/layouts';
-import Image from 'next/image'
+import Navbar from '../components/navbar';
+import Banner from '../components/banner';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
-import carousel1 from '../public/carousel-1.webp'
-import carousel2 from '../public/carousel-2.webp'
-import carousel3 from '../public/carousel-3.webp'
+
 import { Envelope, FacebookLogo, InstagramLogo, TwitterLogo, YoutubeLogo } from 'phosphor-react';
 
 export default function Home() {
   return (
     <Layout>
       <Navbar />
-      <Swiper
-        spaceBetween={0}
-        slidesPerView={1}
-        onSwiper={(swiper) => console.log(swiper)}
-        onSlideChange={() => console.log('slide change')}
-      >
-        <SwiperSlide>
-          <Image alt='' src={carousel1} />
-        </SwiperSlide>
-        <SwiperSlide>
-          <Image alt='' src={carousel2} />
-        </SwiperSlide>
-        <SwiperSlide>
-          <Image alt='' src={carousel3} />
-        </SwiperSlide>
-      </Swiper>
+      <Banner />
       <h4 className='text-center pt-6 pb-4'>Shop our latest offers and innovations</h4>
       <div className='max-w-screen overflow-scroll pb-4 mx-8'>
         <div className='flex gap-6 w-max'>
